@@ -59,6 +59,20 @@ int main()
     for (int i = 0; i < 7 ; ++i) {
         printf("%d ",people[i]);
     }
+    printf("\n");
+    for (int i = 0; i < 7/2 ; ++i) {
+        //交换i 和6-i的值
+        //使用临时变量保存一个数
+        int temp = people[i];
+        //将一个数写到另一个变量中
+        people[i] = people[6 - i];
+        //将临时变量的值赋予第二个变量中
+        people[6-i] = temp;
+    }
+    for (int i = 0; i < 7 ; ++i) {
+        printf("%d ",people[i]);
+
+    }
 
 
     return 0;
